@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwitcherView">
+        <attr name="hover_base_color" format="color" />
+        <attr name="leftmost_hover_color" format="color" />
+        <attr name="rightmost_hover_color" format="color" />
+        <attr name="left_icon_src" format="color|reference" />
+        <attr name="right_icon_src" format="color|reference" />
+        <attr name="left_text" format="string" />
+        <attr name="right_text" format="string" />
+        <attr name="enable_tint_color" format="color" />
+        <attr name="disable_tint_color" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,2 @@
+include ':switcherview'
+rootProject.name='SwitcherView'
