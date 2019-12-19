@@ -14,7 +14,7 @@ Add maven repository into your application-level `build.gradle`:
 repositories {
     ...
     maven {
-        url "http://raw.github.com/pocket7878/SwitcherView/master/repository/"
+        url "https://dl.bintray.com/pocket7878/maven"
     }
     ...
 }
