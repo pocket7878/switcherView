@@ -18,7 +18,15 @@ repositories {
     }
     ...
 }
+
+dependencies {
+    ...
+    implementation "jp.pocket7878.switcherview:switcherview:1.0.2"
+    ...
+}
 ```
+
+
 
 Add view into your layout:
 
