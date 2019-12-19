@@ -23,13 +23,13 @@ class SwitcherView @JvmOverloads constructor(
     ConstraintLayout(context, attrs, defStyle) {
 
     interface OnSwitchSelectChangeListener {
-        fun onLeftItemSelected()
-        fun onRightItemSelected()
+        fun onLeftChoiceSelected()
+        fun onRightChoiceSelected()
         fun onStartSwitchUserControl()
         fun onFinishSwitchUserControl()
     }
 
-    var listener: OnSwitchSelectChangeListener? = null
+    private var listener: OnSwitchSelectChangeListener? = null
 
     private var root: View = LayoutInflater.from(context).inflate(
         R.layout.view_switcher,
@@ -49,23 +49,25 @@ class SwitcherView @JvmOverloads constructor(
     init {
         val a = context.obtainStyledAttributes(attrs, R.styleable.SwitcherView, defStyle, 0)
 
-        enableTintColor = a.getColor(R.styleable.SwitcherView_enable_tint_color, Color.WHITE)
-        disableTintColor = a.getColor(R.styleable.SwitcherView_disable_tint_color, Color.BLACK)
+        enableTintColor =
+            a.getColor(R.styleable.SwitcherView_sv_enable_choice_tint_color, Color.WHITE)
+        disableTintColor =
+            a.getColor(R.styleable.SwitcherView_sv_disable_choice_tint_color, Color.BLACK)
 
-        leftIconView.setImageDrawable(a.getDrawable(R.styleable.SwitcherView_left_icon_src))
-        leftTextView.text = a.getString(R.styleable.SwitcherView_left_text)
+        leftIconView.setImageDrawable(a.getDrawable(R.styleable.SwitcherView_sv_left_choice_icon_src))
+        leftTextView.text = a.getString(R.styleable.SwitcherView_sv_left_choice_text)
         updateLeftIconTextColor(0.0)
 
-        rightIconView.setImageDrawable(a.getDrawable(R.styleable.SwitcherView_right_icon_src))
-        rightTextView.text = a.getString(R.styleable.SwitcherView_right_text)
+        rightIconView.setImageDrawable(a.getDrawable(R.styleable.SwitcherView_sv_right_choice_icon_src))
+        rightTextView.text = a.getString(R.styleable.SwitcherView_sv_right_choice_text)
         updateRightIconTextColor(0.0)
 
         hoverCanvasView.apply {
-            bgColor = a.getColor(R.styleable.SwitcherView_hover_base_color, Color.WHITE)
+            bgColor = a.getColor(R.styleable.SwitcherView_sv_background_color, Color.WHITE)
             leftMostHoverColor =
-                a.getColor(R.styleable.SwitcherView_leftmost_hover_color, Color.BLUE)
+                a.getColor(R.styleable.SwitcherView_sv_leftmost_hover_color, Color.BLUE)
             rightMostHoverColor =
-                a.getColor(R.styleable.SwitcherView_rightmost_hover_color, Color.RED)
+                a.getColor(R.styleable.SwitcherView_sv_rightmost_hover_color, Color.RED)
         }
 
         a.recycle()
@@ -98,21 +100,25 @@ class SwitcherView @JvmOverloads constructor(
         hoverCanvasView.hoverControlFinishListener =
             object : SwitcherHoverCanvasView.OnHoverControlFinishListener {
                 override fun onControlFinishAtLeft() {
-                    listener?.onLeftItemSelected()
+                    listener?.onLeftChoiceSelected()
                 }
 
                 override fun onControlFinishAtRight() {
-                    listener?.onRightItemSelected()
+                    listener?.onRightChoiceSelected()
                 }
             }
     }
 
+    fun setOnSwitchSelectChangeListener(listener: OnSwitchSelectChangeListener) {
+        this.listener = listener
+    }
+
     //region Control hover programmatically
-    fun switchToLeftItem() {
+    fun switchToLeftChoice() {
         hoverCanvasView.setRatio(0.0, true)
     }
 
-    fun switchToRightItem() {
+    fun switchToRightChoice() {
         hoverCanvasView.setRatio(1.0, true)
     }
     //endregion
