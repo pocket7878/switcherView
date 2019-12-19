@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <groupId>jp.poketo7878.switcherview</groupId>
+  <groupId>jp.pocket7878.switcherview</groupId>
   <artifactId>switcherview</artifactId>
   <versioning>
     <release>1.0.0</release>
     <versions>
       <version>1.0.0</version>
     </versions>
-    <lastUpdated>20191219054113</lastUpdated>
+    <lastUpdated>20191219061149</lastUpdated>
   </versioning>
 </metadata>

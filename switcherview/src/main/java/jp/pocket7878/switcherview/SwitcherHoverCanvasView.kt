@@ -1,4 +1,4 @@
-package jp.poketo7878.switcherview
+package jp.pocket7878.switcherview
 
 import android.animation.ValueAnimator
 import android.content.Context

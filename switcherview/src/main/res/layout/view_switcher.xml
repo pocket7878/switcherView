@@ -8,7 +8,7 @@
         android:layout_height="match_parent"
         tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
 
-        <jp.poketo7878.switcherview.SwitcherHoverCanvasView
+        <jp.pocket7878.switcherview.SwitcherHoverCanvasView
             android:id="@+id/hybrid_hover_canvas"
             android:layout_width="0dp"
             android:layout_height="0dp"

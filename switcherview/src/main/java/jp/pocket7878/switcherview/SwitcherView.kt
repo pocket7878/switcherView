@@ -1,4 +1,4 @@
-package jp.poketo7878.switcherview
+package jp.pocket7878.switcherview
 
 import android.content.Context
 import android.content.res.ColorStateList
@@ -11,7 +11,7 @@ import androidx.core.graphics.green
 import androidx.core.graphics.red
 import androidx.core.widget.ImageViewCompat
 import androidx.databinding.DataBindingUtil
-import jp.poketo7878.switcherview.databinding.ViewSwitcherBinding
+import jp.pocket7878.switcherview.databinding.ViewSwitcherBinding
 
 class SwitcherView @JvmOverloads constructor(
     context: Context,

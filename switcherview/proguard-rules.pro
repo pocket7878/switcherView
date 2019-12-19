@@ -20,4 +20,4 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keep public class jp.poketo7878.switcherview.** { public *; }
+-keep public class jp.pocket7878.switcherview.** { public *; }

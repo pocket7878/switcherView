@@ -1,8 +1,7 @@
-package jp.poketo7878.switcherview
+package jp.pocket7878.switcherview
 
+import org.junit.Assert.assertEquals
 import org.junit.Test
-
-import org.junit.Assert.*
 
 /**
  * Example local unit test, which will execute on the development machine (host).
