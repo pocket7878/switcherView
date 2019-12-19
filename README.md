@@ -2,7 +2,7 @@
 
 Toggle Switch Like UI component for Android.
 
-![Switcher View Example](https://camo.qiitausercontent.com/6e624e5e62e4acfdd176b5defb2fad243f118d1c/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f31343335392f66623264633562642d316139662d613933642d646132322d3461393831353761333166642e706e67)
+![Switcher View Example](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F14359%2Fc57045ba-0775-7ffa-4b3d-41d448991382.gif?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&s=7de653411aca87ba2bba3fdc8f9d9b2b)
 
 # Usage
 
