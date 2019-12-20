@@ -8,17 +8,19 @@ Toggle Switch Like UI component for Android.
 
 ## Install
 
-Add maven repository into your application-level `build.gradle`:
+Add maven repository into your `build.gradle`:
 
 ```
 repositories {
     ...
-    maven {
-        url "https://dl.bintray.com/pocket7878/maven"
-    }
+    jcenter()
     ...
 }
+```
 
+Add dependency into your application-level `build.gradle`
+
+```
 dependencies {
     ...
     implementation "jp.pocket7878.switcherview:switcherview:1.0.2"
